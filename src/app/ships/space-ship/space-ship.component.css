@@ -1,0 +1,38 @@
+:host{
+    max-width:100px;
+    display: inline-block;
+    margin:10px;
+}
+
+.health-bar{
+    background: red;
+    height: 10px;
+    margin: 10px 0;
+}
+.remaining-health{
+    height: 100%;
+    background: green;
+    
+}
+
+
+.property-state{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 32px;
+    
+}
+.property-state:not(.active) {
+    opacity: 0.5;
+}
+ img.space-ship-image {
+
+    max-width: 100px;
+    max-height: 100px;
+ }
+h4{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}

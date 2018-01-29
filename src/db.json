@@ -1,0 +1,22 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Lee",
+      "lastName": "Adama",
+      "imageUrl": "/assets/stasiu.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Sharon",
+      "lastName": "Valerii",
+      "imageUrl": "/assets/viki.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Karl",
+      "lastName": "Ahathon",
+      "imageUrl": "/assets/viki.jpg"
+   }
+  ]
+}

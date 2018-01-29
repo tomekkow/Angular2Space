@@ -1,0 +1,17 @@
+
+<h4>{{ship.modelName | shipName:ship.pilot?.fullName}}</h4>
+
+<div class="images-wrapper">
+<img  class="images-wrapper" [src]="ship.imageUrl" appSpaceImage/>
+</div>
+  
+<div class="health-bar">
+    <div class="remaining-health" [style.width.%]="ship.health"             [title]="ship.health + '%'">  
+    </div>
+</div>
+<img class="pilot-image"
+    *ngIf="ship.pilot"
+    [src]="ship.pilot.imageUrl"
+    [title]="ship.pilot.fullName"/>
+ 
+<ng-content></ng-content>

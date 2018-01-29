@@ -1,6 +1,6 @@
 import { AngularspacePage } from './app.po';
 
-describe('angularspace App', () => {
+xdescribe('angularspace App', () => {
   let page: AngularspacePage;
 
   beforeEach(() => {

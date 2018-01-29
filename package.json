@@ -4,11 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run api\" \"ng serve --port 9010 --open --proxy-config api/proxy.conf.json\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "api": "json-server --watch api/db.json --port 9020 --routes api/routes.json",
+    "e2e": "ng e2e --proxy-config api/proxy.conf.json"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "a2s-comm": "^1.0.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
@@ -32,14 +34,16 @@
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
+    "concurrently": "^3.4.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
+    "json-server": "^0.10.1",
     "karma": "~1.7.0",
     "karma-chrome-launcher": "~2.1.1",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^1.2.1",
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",

@@ -1,0 +1,15 @@
+.main-nav {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+.main-nav a {
+    color: white;
+    margin: 0 4px;
+}
+
+.main-nav a.active {
+    color: red;
+}

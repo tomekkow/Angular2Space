@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-6">
+        <h2>Space Hangar</h2>
+        
+        <app-space-ship *ngFor="let ship of ships$ | async" [ship]="ship">
+            <button type="button"
+                    *ngIf="selectedPilot && !ship.pilot"
+                    (click)="assignPilot(ship)">
+                Pilotuj
+            </button>
+            <button type="button"
+                    *ngIf="ship.pilot" 
+                    (click)="deassignPilot(ship)">
+                Opuść
+            </button>
+        </app-space-ship>
+        
+    </div>
+    <div class="col-6" class="room">
+        <h2>Pilots Room</h2>
+        
+        <app-pilot-room (onPilotSelect)="selectedPilot = $event"></app-pilot-room>
+        
+       <div class="engineers-header">
+            <h2>Engineers Room</h2>
+            <a routerLink="." routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Produkcja</a>
+            <a routerLink="trash" routerLinkActive="active">Utylizacja</a>
+        </div>
+        <router-outlet></router-outlet> 
+    </div>
+</div>
+

@@ -1,0 +1,40 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "imageUrl": "/assets/viki.jpg",
+      "firstName": "Lee",
+      "lastName": "Adama"
+    },
+    {
+      "id": 2,
+      "firstName": "Sharon",
+      "lastName": "Valerii",
+      "imageUrl": "/assets/stasiu.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Karl",
+      "lastName": "Ahathon",
+      "imageUrl": "/assets/viki.jpg"
+    },
+    {
+      "imageUrl": "/assets/stasiu.jpg",
+      "firstName": "Tom",
+      "lastName": "Kow",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": "/assets/miki.jpg",
+      "firstName": "Japonka",
+      "lastName": "Z Japonii"
+    },
+    {
+      "id": 6,
+      "imageUrl": "/assets/ona.jpg",
+      "firstName": "Ewelina",
+      "lastName": "Kolonasa"
+    }
+  ]
+}
